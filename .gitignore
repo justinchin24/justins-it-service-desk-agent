@@ -1,0 +1,28 @@
+# Environment variables
+.env
+*.env
+.streamlit/secrets.toml
+
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Local Databases & Storage
+chroma_db/
+*.sqlite3
+*.bin
+
+# Python Cache & Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
