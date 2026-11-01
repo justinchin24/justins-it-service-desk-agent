@@ -21,22 +21,7 @@ The application is split into a decoupled three-tier client-server architecture:
 * **Robust Error Handling**: Gracefully catches network or execution exceptions and translates technical payloads into natural language explanations.
 * **Low-Latency Python Integration**: Utilizes Python's `requests` library and FastAPI for lightning-fast local communication over standard loopback ports (`127.0.0.1:8000`).
 
----
-
-## 📁 Project Structure
-
-```text
-justins-it-service-desk-agent/
-│
-├── app.py              # FastAPI mock backend server & endpoints
-├── agent.py            # Gemini client initialization, tool wrappers, and execution loop
-├── ui.py               # Streamlit web chat user interface
-├── requirements.txt    # Project dependencies and pinned library versions
-├── .env                # Local environment variables (API keys - excluded from Git)
-└── README.md           # Project documentation
-```
-
-## 🚀 Getting Started
+## 🚀 Local Setup & Installation
 
 ### 1. Prerequisites
 - Python 3.10 or higher
@@ -79,4 +64,19 @@ uvicorn app:app --reload
 Launch the Streamlit web application:
 ```bash
 streamlit run ui.py
+```
+---
+
+## 📁 Repository Structure
+
+```text
+justins-it-service-desk-agent/
+│
+├── app.py              # FastAPI mock backend server
+├── agent.py            # Defines the tool wrappers and Gemini agent logic
+├── ui.py               # Streamlit UI implementation & chat logic
+├── requirements.txt    # Project dependencies to install
+├── .env                # Environment variables and API keys (ignored in git)
+├── .gitignore          # Git ignore file
+└── README.md           # Project documentation
 ```
